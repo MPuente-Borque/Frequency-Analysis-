@@ -1,6 +1,6 @@
 function [mP2, f2, eP2]=fourier_bootstrap_MPB(x,color)
 %input: x= [tiempo|señal|error]
-        % color, para dibujar la gráfica 
+        % color, hexadecimal para dibujar la gráfica 
 %output  mP2 Power spectrum
         % f2 frecuency
         % eP2 Power spectrum error
