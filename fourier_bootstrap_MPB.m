@@ -28,8 +28,6 @@ plot(f2,mP2,'Color',color,'LineWidth',2);hold on
 e1=fill([f2' fliplr(f2')],[(mP2-eP2) fliplr((mP2+eP2))], color,'LineStyle','none');
 alpha(e1,0.2);
 
-% plot(f2,mP2+eP2,color);
-% plot(f2,mP2-eP2,color);
 xlabel('Frequency (1/yr)')
 ylabel('Amplitude')
 grid on
