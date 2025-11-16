@@ -1,5 +1,5 @@
 function [periods,datos]=decomposition(data)
-    % EMD Empirical Mode Decomposition
+    % EMD Empirical Mode Decomposition (requires emd.m)
     %input: data[time , parameter] in 2 columns
     %output: Figure 1: (from top to bottom) original signal (red) IMF-1 
             % to IMF-n and residual
@@ -52,3 +52,4 @@ function [periods,datos]=decomposition(data)
     figure
     plot(lags*inc,acf)
     periods=lags(loc)*inc;
+
