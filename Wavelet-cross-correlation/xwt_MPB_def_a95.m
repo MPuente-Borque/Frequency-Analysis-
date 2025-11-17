@@ -2,6 +2,7 @@ function [coi,signif,Pkx,Pky,Wxy,t,period, sig95,sigmax,sigmay,X,Y]=xwt_MPB_def_
 % Creates a figure of cross wavelet power in units of
 % normalized variance.
 %
+%NOTE THAT IT REQUIRES CODE IN wavelet-coherence-master and private22 folder
 % USAGE: [Wxy,period,scale,coi,sig95]=xwt(x,y,[,settings])
 %
 % x & y: two time series
@@ -208,5 +209,6 @@ sig95 = abs(Wxy) ./ sig95;%ver(Grinsted et al 2004;Torrence and Compo 1998)
 %
 % varargout={Wxy,period,scale,coi,sig95};
 % varargout=varargout(1:nargout);
+
 
 end
